@@ -1,0 +1,79 @@
+{
+  "defaultMinSharePreemptionTimeout": null,
+  "defaultQueueSchedulingPolicy": null,
+  "fairSharePreemptionTimeout": null,
+  "queueMaxAMShareDefault": null,
+  "queueMaxAppsDefault": null,
+  "queuePlacementRules": [],
+  "queues": [
+    {
+      "aclAdministerApps": " ",
+      "aclSubmitApps": "*",
+      "minSharePreemptionTimeout": null,
+      "name": "root",
+      "queues": [
+        {
+          "aclAdministerApps": "*",
+          "aclSubmitApps": "*",
+          "minSharePreemptionTimeout": null,
+          "name": "default",
+          "queues": [],
+          "schedulablePropertiesList": [
+            {
+              "impalaMaxMemory": null,
+              "impalaMaxQueuedQueries": null,
+              "impalaMaxRunningQueries": null,
+              "maxAMShare": null,
+              "maxResources": null,
+              "maxRunningApps": null,
+              "minResources": null,
+              "scheduleName": "default",
+              "weight": 1.0
+            }
+          ],
+          "schedulingPolicy": "drf"
+        },
+        {
+          "aclAdministerApps": "*",
+          "aclSubmitApps": "*",
+          "minSharePreemptionTimeout": null,
+          "name": "liukai",
+          "queues": [],
+          "schedulablePropertiesList": [
+            {
+              "impalaMaxMemory": null,
+              "impalaMaxQueuedQueries": null,
+              "impalaMaxRunningQueries": null,
+              "maxAMShare": null,
+              "maxResources": null,
+              "maxRunningApps": null,
+              "minResources": {
+                "memory": 5,
+                "vcores": 5
+              },
+              "scheduleName": "default",
+              "weight": 1.0
+            }
+          ],
+          "schedulingPolicy": "drf"
+        }
+      ],
+      "schedulablePropertiesList": [
+        {
+          "impalaMaxMemory": null,
+          "impalaMaxQueuedQueries": null,
+          "impalaMaxRunningQueries": null,
+          "maxAMShare": null,
+          "maxResources": null,
+          "maxRunningApps": null,
+          "minResources": null,
+          "scheduleName": "default",
+          "weight": 1.0
+        }
+      ],
+      "schedulingPolicy": "drf"
+    }
+  ],
+  "userMaxAppsDefault": null,
+  "users": []
+}
